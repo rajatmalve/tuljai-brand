@@ -1,0 +1,36 @@
+{
+  "name": "Tuljai Gruh Udyog",
+  "short_name": "Tuljai",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "lang": "en",
+  "description": "Authentic Maharashtrian masalas, papads and pickles — women-led, preservative-free, crafted with love.",
+  "icons": [
+    {
+      "src": "/icons/tuljai-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/tuljai-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/tuljai-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/tuljai-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

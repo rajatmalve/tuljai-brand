@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 24 60% 10%;
+
+    --surface: 30 100% 98%;
+
+    --card: 30 100% 98%;
+    --card-foreground: 24 60% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 60% 10%;
+
+    --primary: 30 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --primary-hover: 30 90% 44%;
+
+    --secondary: 30 20% 95%;
+    --secondary-foreground: 24 60% 10%;
+
+    --muted: 240 4% 46%;
+    --muted-foreground: 240 4% 46%;
+
+    --accent: 30 90% 44%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 24 60% 10% / 0.06;
+    --input: 24 60% 10% / 0.1;
+    --ring: 30 100% 60%;
+
+    --radius: 1rem;
+
+    --whatsapp: 142 70% 49%;
+
+    --shadow-card: 0 0 0 1px rgba(0,0,0,.03), 0 2px 4px rgba(0,0,0,.05), 0 12px 24px rgba(0,0,0,.05);
+    --shadow-elevated: 0 4px 12px rgba(0,0,0,.08), 0 20px 40px rgba(0,0,0,.08);
+
+    --font-display: 'Fraunces', serif;
+    --font-body: 'Public Sans', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: hsl(30 100% 60% / 0.3);
+  }
+}
